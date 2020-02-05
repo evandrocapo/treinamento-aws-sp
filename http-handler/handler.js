@@ -9,7 +9,7 @@ module.exports.execute = async event => {
 
   return {
     statusCode: 201,
-    body: JSON.stringify(result),
+    body: JSON.stringify(result)
   };
 
   // Use this code if you don't use the http event with the LAMBDA-PROXY integration
