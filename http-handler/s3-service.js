@@ -15,7 +15,7 @@ const upload = body => {
 
         S3.putObject({
             Bucket: BUCKET_NAME,
-            Key: key,
+            Key: `${key}.jpg`,
             Body: Buffer.from(body.replace(/ˆdata:image\/\w+;base64,/, ""),"base64"),
             ContentEncoding: 'base64',
             ContentType: 'image/jpeg'
