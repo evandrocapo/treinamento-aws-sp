@@ -69,13 +69,14 @@ custom:
 functions:
   255-http-handler:
     handler: handler.execute
+    role: arn:aws:iam::983580680417:role/255-http-handler-role
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
-events:
-  - http:
-      path: biblioteca/upload
-      method: post
+    events:
+      - http:
+          path: biblioteca/upload
+          method: post
 #      - websocket: $connect
 #      - s3: ${env:BUCKET}
 #      - schedule: rate(10 minutes)
