@@ -1,4 +1,30 @@
-Serverless Create Template:
+> DONTPAD
+
+http://dontpad.com/idemia-aws
+
+> Serverless Create Template:
 
     - serverless create --template aws-nodejs --path http-handler
 
+> Serverless APIGW-Binary:
+
+    - npm install --save-dev serverless-apigw-binary
+
+> Serverless serverless.YML:
+
+plugins:
+ - serverless-apigw-binary
+
+custom:
+  apigwBinary:
+    types:           #list of mime-types
+      - 'image/jpeg'
+      - 'text/html'
+
+> AWS-SDK:
+
+    - npm install --save-dev aws-sdk
+
+> UUID:
+
+    - npm install --save uuid 
