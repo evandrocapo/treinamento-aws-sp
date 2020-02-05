@@ -1,0 +1,4 @@
+Serverless Create Template:
+
+    - serverless create --template aws-nodejs --path http-handler
+
